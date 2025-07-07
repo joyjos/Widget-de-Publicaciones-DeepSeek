@@ -46,6 +46,9 @@ app.post("/api/generate-post", async(req, res) => {
 
             Alterna el tipo de publicación.
 
+            Las publicaciones no tienen por qué cubrir todos los gustos del usuario,
+            pueden ser dedicadas a solo uno de esos gustos.
+
             RECORDATORIO IMPORTANTE: Nunca debes generar texto con más de 177 letras.
         `;
 
@@ -53,7 +56,7 @@ app.post("/api/generate-post", async(req, res) => {
             model: "deepseek-chat",
             messages: [
                 {role: "system", content: promptSystem},
-                {role: "user", content: userPreferences}
+                {role: "user", content: "Genera un texto de una de estas temáticas, creativo y diferente: " + userPreferences}
             ],
             max_tokens: 500
         });
