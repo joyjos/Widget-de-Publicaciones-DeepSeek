@@ -122,3 +122,22 @@ body{
     border-radius: 0.8rem;
     margin-bottom: 0.5rem;
 }
+
+.widget__posts.scrollable {
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.widget__posts::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+.widget__posts::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.widget__posts::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
