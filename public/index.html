@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Cargar los assets -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/main.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/icon-stars.png"
+      type="image/png"
+    />
+
+    <title>Widget de Publicaciones sintéticas</title>
+  </head>
+  <body>
+
+    <header class="widget__header">
+      <img class="header__icon" src="./assets/img/icon-stars.png">
+      <h1 class="header__title">Generar publicaciones (DeepSeek)</h1>
+    </header>
+
+    <section class="widget">
+
+        <textarea class="widget__textarea" placeholder="Escribe algo..." maxlength="177"></textarea>
+
+        <div class="widget__buttons">
+          <button class="widget__button widget__button--ia">✨</button>
+
+          <button class="widget__button widget__button--pub">Publicar</button>
+        </div>
+
+        <section class="widget__posts"></section>
+        
+    </section>
+
+  </body>
+</html>
