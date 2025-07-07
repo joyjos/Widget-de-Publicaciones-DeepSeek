@@ -35,8 +35,8 @@ document.querySelector(".widget__button--pub").addEventListener("click", () => {
         postsBox.prepend(postArticle);
         textarea.value = "";
 
-        if( postsBox.children.length > ){
+        if( postsBox.children.length > 5){
             postsBox.classList.add("scrollable");
         }
     }
-})
+});
