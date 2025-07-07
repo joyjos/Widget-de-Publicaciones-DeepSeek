@@ -1,5 +1,5 @@
-# Widget de Publicaciones
-Generador automático de publicaciones usando Inteligencia Artificial.
+# Publications Widget
+Generador automático de publicaciones usando **Inteligencia Artificial**.
 
 Esta aplicación permite crear publicaciones breves sobre una temática específica (como salud, inteligencia artificial o viajes) utilizando el modelo **DeepSeek**. El resultado se presenta como un widget que puede integrarse fácilmente en cualquier página web.
 
@@ -77,7 +77,7 @@ Esta aplicación permite crear publicaciones breves sobre una temática específ
 <a id="section_03"></a>
 ## *03 API Endpoints*
 
-| HTTP Method | Endpoint           | Comentario                       |
+| HTTP Method | Endpoint           | Comment                       |
 |-------------|--------------------|----------------------------------|
 | POST        | /api/generate-post | Generate Post                    |
 
